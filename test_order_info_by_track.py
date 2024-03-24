@@ -1,8 +1,17 @@
 # Горюнов Александр, 14-а когорта - финальный проект, QA+
+import data
 import stand_request
 
+def creat_new_order():
 
-def test_order_info_by_track_status_code_200():
+# создаем заказ
+    response = stand_request.order_create()
+    assert response.status_code == 201
+    return response.json()["track"]
 
-    order_info = stand_request.get_order_info_by_track()
-    assert order_info.status_code == 200
+def test_order_info_by_track():
+
+# создание и получение заказа
+    track = creat_new_order()
+    response = stand_request.get_order_info_by_track(str(track))
+    assert response.status_code == 200

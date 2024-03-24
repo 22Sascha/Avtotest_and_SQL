@@ -1,9 +1,13 @@
 order_create_body = {
-    "firstName": "Елена",
-    "lastName": "Гром",
-    "address": "Шоссе Энтузиастов, 11-20",
-    "metroStation": 147,
-    "phone": "+7 981 461 06 63",
+    "firstName": "Naruto",
+    "lastName": "Uchiha",
+    "address": "Konoha, 142 apt.",
+    "metroStation": 4,
+    "phone": "+7 800 355 35 35",
     "rentTime": 5,
-    "deliveryDate": "2023-09-22"
+    "deliveryDate": "2020-06-06",
+    "comment": "Saske, come back to Konoha",
+    "color": [
+        "BLACK"
+    ]
 }
